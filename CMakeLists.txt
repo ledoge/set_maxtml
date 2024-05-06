@@ -5,3 +5,6 @@ set(CMAKE_C_STANDARD 17)
 
 add_executable(set_maxtml main.c)
 target_link_libraries(set_maxtml "$<$<CONFIG:Release>:-s -static>")
+
+add_executable(set_sdrwhite main_sdrwhite.c)
+target_link_libraries(set_sdrwhite "$<$<CONFIG:Release>:-s -static>")
