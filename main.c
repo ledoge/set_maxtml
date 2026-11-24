@@ -120,6 +120,7 @@ int main(int argc, char **argv) {
         int nits = atoi(argv[2]);
         if (nits <= 0 || nits > 10000) {
             fprintf(stderr, "Invalid nits value %d\n", nits);
+            return 1;
         }
 
         DISPLAYCONFIG_PATH_INFO path = paths[monitor - 1];
