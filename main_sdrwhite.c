@@ -112,6 +112,7 @@ int main(int argc, char **argv) {
         int nits = atoi(argv[2]);
         if (nits < 80 || nits > 480) {
             fprintf(stderr, "Invalid nits value %d\n", nits);
+            return 1;
         }
 
         // round up to multiple of 4 to match sdr brightness slider increments
